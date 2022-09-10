@@ -1,0 +1,23 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 48px 22px 26px;
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+    .select {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 67px;
+        padding: 5px 9px;
+        margin-left: 28px;
+        border: 0.5px solid #fff;
+        border-radius: 5px;
+        .profile-img {
+            border-radius: 50%;
+        }
+    }
+}
