@@ -1,2 +1,12 @@
 @import './variables.scss';
 @import './fonts/fonts.scss';
+
+#root {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 25px;
+}
+.page {
+    padding: 26px;
+}

@@ -5,7 +5,6 @@ import SideBar from '../Sections/SideBar'
 const Home = () => {
   return (
     <div className='home page'>
-        <NavBar/>
         <SideBar/>
     </div>
   )
