@@ -5,12 +5,12 @@ import Button from '../components/Button'
 const SideBar = () => {
   return (
     <div className='side-bar'>
-      <Button class={'create-button'} text={'Create'} icon={'/assets/create-icon.png'} type={'base'} />
+      <Button class={'create-btn big secondary'} text={'Create'} icon={'/assets/create-icon.png'}/>
       <div className="items">
-        <Button text={'Talents'} icon={'/assets/bulk.png'} type={'white'}/>
-        <Button text={'Offers'} icon={'/assets/offers.png'} type={'transparent'}/>
-        <Button text={'Messangers'} icon={'/assets/Chat.png'} type={'transparent'}/>
-        <Button text={'Page'} icon={'/assets/Home.png'} type={'transparent'}/>
+        <Button text={'Talents'} icon={'/assets/bulk.png'} class={'sidebar-btn active '}/>
+        <Button text={'Offers'} icon={'/assets/offers.png'} class={'sidebar-btn'}/>
+        <Button text={'Messangers'} icon={'/assets/Chat.png'} class={'sidebar-btn'}/>
+        <Button text={'Page'} icon={'/assets/Home.png'} class={'sidebar-btn'}/>
       </div>
       <div className="about">
         <div className="links">

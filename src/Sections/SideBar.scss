@@ -1,3 +1,4 @@
+@import '../variables.scss';
 .side-bar {
     display: flex;
     flex-direction: column;
@@ -12,7 +13,6 @@
     .items {
         .button {
             justify-content: flex-start;
-            gap: 9px;
             width: 100%;
             margin-bottom: 30px;
         }

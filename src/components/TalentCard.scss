@@ -4,6 +4,10 @@
     background-color: #242526;
     padding: 34px 45px;
     border-radius: 10px;
+    transition: transform 0.1s ease;
+    &:hover {
+        transform: scale(1.02);
+    }
     .talent-img {
         width: 80px;
         height: 80px;
