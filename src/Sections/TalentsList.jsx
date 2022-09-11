@@ -5,17 +5,77 @@ import TalentCard from '../components/TalentCard'
 const TalentsList = () => {
   const talents = [
     {
-      img: '/assets/Andre.jpg',
+      img: '/assets/Andre.png',
+      name: 'Andre Mark',
+      isMarked: true,
+      location: 'Moscow, Russia',
+      specialization: 'Front-End Developer',
+      company: 'VTB',
+      hours: '10-20',
+      available: true,
+      select: true
+    },
+    {
+      img: '/assets/Attila.png',
       name: 'Andre Mark',
       location: 'Moscow, Russia',
       specialization: 'Front-End Developer',
+      company: 'VTB',
       hours: '10-20',
       available: false
     },
     {
+      img: '/assets/Nicholas.png',
       name: 'Andre Mark',
       location: 'Moscow, Russia',
       specialization: 'Front-End Developer',
+      company: 'VTB',
+      hours: '10-20',
+      available: false
+    },
+    {
+      img: '/assets/Serena.png',
+      name: 'Andre Mark',
+      location: 'Moscow, Russia',
+      specialization: 'Front-End Developer',
+      company: 'VTB',
+      hours: '10-20',
+      available: false
+    },
+    {
+      img: '/assets/Andre.png',
+      name: 'Andre Mark',
+      isMarked: true,
+      location: 'Moscow, Russia',
+      specialization: 'Front-End Developer',
+      company: 'VTB',
+      hours: '10-20',
+      available: true
+    },
+    {
+      img: '/assets/Attila.png',
+      name: 'Andre Mark',
+      location: 'Moscow, Russia',
+      specialization: 'Front-End Developer',
+      company: 'VTB',
+      hours: '10-20',
+      available: false
+    },
+    {
+      img: '/assets/Nicholas.png',
+      name: 'Andre Mark',
+      location: 'Moscow, Russia',
+      specialization: 'Front-End Developer',
+      company: 'VTB',
+      hours: '10-20',
+      available: true
+    },
+    {
+      img: '/assets/Serena.png',
+      name: 'Andre Mark',
+      location: 'Moscow, Russia',
+      specialization: 'Front-End Developer',
+      company: 'VTB',
       hours: '10-20',
       available: false
     }

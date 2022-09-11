@@ -1,0 +1,56 @@
+.talent-card {
+    position: relative;
+    display: flex;
+    background-color: #242526;
+    padding: 34px 45px;
+    border-radius: 10px;
+    .talent-img {
+        width: 80px;
+        height: 80px;
+        margin-right: 25px;
+    }
+    .name {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+        font-weight: 700;
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .location-wrapper {
+        display: flex;
+        font-size: 7px;
+        img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .job {
+        p {
+            display: inline;
+        }
+        font-size: 10px;
+        font-weight: bold;
+        .company {
+            font-weight: normal;
+        } 
+    }
+    .access-info {
+        display: flex;
+        gap: 15px;
+    }
+    .marked {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+}

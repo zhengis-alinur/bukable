@@ -14,10 +14,10 @@ const SideBar = () => {
       </div>
       <div className="about">
         <div className="links">
-          <a href="">About</a>
-          <a href="">Privacy</a>
-          <a href="">Support</a>
-          <a href="">More</a>
+          <a href="https://www.bukable.co/">About</a>
+          <a href="https://www.bukable.co/">Privacy</a>
+          <a href="https://www.bukable.co/">Support</a>
+          <a href="https://www.bukable.co/">More</a>
         </div>
         <div className="downloads">
           <p>Coming soon</p>

@@ -35,14 +35,44 @@ const Button = (props) => {
       lineHeight: '22px',
       fontWeight: '500',
       color: '#fff'
-    }
+    },
+    smallgrey: {
+      backgroundColor: 'rgba(255,255,255, 0.5',
+      padding: '0 8px',
+      fontSize: '8px',
+      lineHeight: '22px',
+      fontWeight: '500',
+      color: '#fff',
+      borderRadius: '20px',
+      gap: '5px'
+    },
+    smallgreen: {
+      backgroundColor: '#3C983A',
+      padding: '0 8px',
+      fontSize: '8px',
+      lineHeight: '22px',
+      fontWeight: '500',
+      color: '#fff',
+      borderRadius: '20px',
+      gap: '5px'
+    },
+    smallred: {
+      backgroundColor: '#9F3232',
+      padding: '0 8px',
+      fontSize: '8px',
+      lineHeight: '22px',
+      fontWeight: '500',
+      color: '#fff',
+      borderRadius: '20px',
+      gap: '5px'
+    },
   }
 
   const type = types[props.type];
   return (
     <button className={`button ${props.class}`}
       style = {type}>
-        {props.icon ? <img src={props.icon}></img> : ''}
+        {props.icon ? <img src={props.icon} alt=''></img> : ''}
         <span>{props.text}</span>
     </button>
   )

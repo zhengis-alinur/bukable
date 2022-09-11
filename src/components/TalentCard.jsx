@@ -1,26 +1,35 @@
 import React from 'react'
 import './TalentCard.scss'
+import Button from './Button';
 
 const TalentCard = (props) => {
     console.log(props.name);
   return (
     <div className='talent-card'>
-        <img src={props.img} alt="talent image" />
+        <img src={props.img} alt="talent" className='talent-img'/>
         <div className="about">
-            <p className="name">{props.name}</p>
-            <p className="location">{props.location}</p>
-            <p className="specialization">{props.specialization}</p>
-        </div>
-        <div className="access-info">
-            <div className="hours-info">
-                {props.hours}
+            <div className="name">
+                <p>{props.name}</p>
+                {props.isMarked ? <img src="assets/mark.png" alt="" /> : ''}
             </div>
-            <div className="hours-info">
-                <p>{props.available ? 'Available':'Unavailable'}</p>
+            <div className='location-wrapper'>
+                <img src="assets/map-pin.png" alt="" />
+                <p className="location">{props.location}</p>
+            </div>
+            <div className="job">
+                <p>{props.specialization} - <span className='company'>{props.company}</span></p>
+            </div>
+            <div className="access-info">
+                <div className="hours-info">
+                    <Button icon={'assets/clock.png'} type={'smallgrey'} text={props.hours+' hrs/week'}/>
+                </div>
+                <div className="hours-info">
+                    <Button icon={'assets/zap.png'} type={props.available ? 'smallgreen':'smallred'} text={props.available ? 'Available':'Unavailable'}/>
+                </div>
             </div>
         </div>
         <div className="marked">
-            
+            <img src={props.select ? '/assets/selected.png' : '/assets/select.png'} alt=""/>
         </div>
     </div>
   )

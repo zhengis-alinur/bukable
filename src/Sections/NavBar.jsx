@@ -14,7 +14,7 @@ const NavBar = () => {
         <div className="menu">
             <NotifyIcon/>
             <div className="select">
-                <img src={profileImg} alt="profile image" className="profile-img" />
+                <img src={profileImg} alt="profile" className="profile-img" />
                 <SelectIcon/>
             </div>
         </div>
