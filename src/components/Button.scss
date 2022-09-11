@@ -11,16 +11,11 @@
     font-weight: 500;
     line-height: 22px;
     gap: 9px;
+    transition: all 0.3s ease;
     &.big{
         padding: 8px 16px;
         border-radius: 15px;
         font-size: 12px;
-    }
-    & .primary {
-        background-color: $primary;
-    }
-    &.secondary {
-        background-color: $secondary
     }
     &.sidebar-btn{
         padding: 10px 16px;
@@ -28,7 +23,6 @@
         font-size: 14px;
         background-color: transparent;
         color: #fff;
-        transition: transform 0.3s ease;
         &:hover {
             transform: scale(1.1);
         }
@@ -46,14 +40,30 @@
         color: #fff;
         border-radius: 20px;
         gap: 5px;
-        &.red {
-            background-color: $warning-color;
+    }
+
+    &.primary {
+        background-color: $primary;
+        &:hover {
+            background-color: $primary-darker;
         }
-        &.green {
-            background-color: $secondary;
+    }
+    &.secondary {
+        background-color: $secondary;
+        &:hover {
+            background-color: $secondary-darker;
         }
-        &.grey {
-            background-color: rgba(255,255,255, 0.5)
+    }
+    &.warning {
+        background-color: $warning;
+        &:hover {
+            background-color: $warning-darker;
+        }
+    }
+    &.grey {
+        background-color: rgba(255,255,255, 0.5);
+        &:hover {
+            background-color: rgba(255,255,255, 0.4);
         }
     }
 }

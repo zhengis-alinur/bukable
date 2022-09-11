@@ -23,7 +23,7 @@ const TalentCard = (props) => {
                     <Button icon={'assets/clock.png'} class={'small grey'} text={props.hours+' hrs/week'}/>
                 </div>
                 <div className="hours-info">
-                    <Button icon={'assets/zap.png'} class={props.available ? 'small green':'small red'} text={props.available ? 'Available':'Unavailable'}/>
+                    <Button icon={'assets/zap.png'} class={props.available ? 'small secondary':'small warning'} text={props.available ? 'Available':'Unavailable'}/>
                 </div>
             </div>
         </div>
