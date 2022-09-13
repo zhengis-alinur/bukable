@@ -1,0 +1,13 @@
+.education-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .speciality {
+        font-size: 16px;
+        color: white
+    }
+    .university-name {
+        font-size: 13px;
+        color: rgba(255,255,255,0.5)
+    }
+}

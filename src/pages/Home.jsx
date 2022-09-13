@@ -27,7 +27,8 @@ const Home = () => {
       specialization: 'Front-End Developer',
       company: 'VTB',
       hours: '10-20',
-      available: false
+      available: false,
+      select: false
     },
     {
       id:3,
@@ -37,7 +38,8 @@ const Home = () => {
       specialization: 'Front-End Developer',
       company: 'VTB',
       hours: '10-20',
-      available: false
+      available: false,
+      select: true
     },
     {
       id:4,

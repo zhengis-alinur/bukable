@@ -1,0 +1,30 @@
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    .info-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+    }
+    .speciality {
+        color: white;
+        font-size: 16px;
+    }
+    .company-name {
+        color: white;
+        font-size: 13px;
+    }
+    .period {
+        font-size: 10px;
+        color: rgba(255,255,255,0.6);
+    }
+    .caption {
+        margin-top: 10px;
+        margin-left: 28px;
+        font-size: 10px;
+        line-height: 20px;
+        color: white;
+    }
+}

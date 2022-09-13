@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useState} from 'react'
 import './TalentCard.scss'
 import Button from './Button';
 import TalentContext from '../contexts/context';
@@ -6,7 +6,10 @@ import TalentContext from '../contexts/context';
 const TalentCard = (props) => {
 
     const {currentTalent, setTalent} = useContext(TalentContext)
-
+    const [select, setSelect] = useState(props.select)
+    const toggleSelect = () => {
+        setSelect(!select);
+    }
     return (
         <div className='talent-card' onClick={() => {setTalent(props)}}>
             <img src={props.img} alt="talent" className='talent-img'/>
@@ -31,8 +34,8 @@ const TalentCard = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="marked">
-                <img src={props.select ? '/assets/selected.png' : '/assets/select.png'} alt=""/>
+            <div className="marked" onClick={()=>toggleSelect()}>
+                <img src={select ? '/assets/selected.png' : '/assets/select.png'} alt=""/>
             </div>
         </div>
     )
