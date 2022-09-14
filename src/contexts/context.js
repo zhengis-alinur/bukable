@@ -1,3 +1,3 @@
 import React from "react";
-const TalentContext = React.createContext();
-export default TalentContext;
+export const TalentContext = React.createContext();
+export const SideBarContext = React.createContext();

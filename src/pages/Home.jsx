@@ -3,7 +3,7 @@ import SideBar from '../Sections/SideBar'
 import TalentProfile from '../Sections/TalentProfile'
 import TalentsList from '../Sections/TalentsList'
 import './Home.scss'
-import TalentContext from '../contexts/context'
+import {TalentContext, SideBarContext} from '../contexts/context'
 
 const Home = () => {
   const data = [
@@ -100,7 +100,7 @@ const Home = () => {
   window.addEventListener('resize', ()=>{
     if(window.innerWidth > 1200) {
       setShowProfile(true);
-    } else {
+    } else if(!showProfile){
       setShowProfile(false);
     }
   });

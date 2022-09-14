@@ -1,9 +1,13 @@
 .nav-bar {
-    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 22px 48px 22px 26px;
+    background: #000;
+    .burger-menu {
+        display: none;
+        font-size: 24px;
+    }
     .menu {
         display: flex;
         align-items: center;
@@ -26,5 +30,18 @@
 @media screen and (max-width: 800px) {
     .nav-bar {
         padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar {
+        position: fixed;
+        left: 2.5%;
+        top: 0;
+        width: 95%;
+        z-index: 100;
+        .burger-menu {
+            display: block;
+        }
     }
 }

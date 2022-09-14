@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react'
 import './TalentProfile.scss'
 import Button from '../components/Button'
-import TalentContext from '../contexts/context'
+import {TalentContext} from '../contexts/context'
 import EducationCard from './EducationCard'
 import ExperienceCard from './ExperienceCard'
 

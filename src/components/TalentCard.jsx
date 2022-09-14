@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react'
 import './TalentCard.scss'
 import Button from './Button';
-import TalentContext from '../contexts/context';
+import {TalentContext} from '../contexts/context'
 
 const TalentCard = (props) => {
 
@@ -14,6 +14,7 @@ const TalentCard = (props) => {
     }
     const toggleTalent = () => {
         setTalent(props);
+        window.scrollTo(0,0);
         setShowProfile(true);
     }
     return (

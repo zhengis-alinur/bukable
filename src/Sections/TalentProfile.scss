@@ -102,8 +102,6 @@
 
 @media screen and (max-width: 1200px) {
     .talent-profile {
-        display: none;
-        position: absolute;
         width: 100%;
         .back-arrow {
             display: block;
@@ -117,7 +115,7 @@
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .talent-profile {
         .header {
             height: auto;
