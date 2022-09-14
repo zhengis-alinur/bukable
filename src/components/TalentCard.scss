@@ -58,3 +58,9 @@
         right: 16px;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .talent-card {
+        padding: 10px;
+    }
+}

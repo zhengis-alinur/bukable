@@ -3,17 +3,25 @@
 .talent-profile {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    background-color: #000;
     border: $primary solid 1px;
     border-radius: 8px;
     padding: 6px;
+    width: 56%;
+    .back-arrow {
+        display: none;
+        text-align: right;
+        transform:rotateY(180deg); 
+        margin: 10px;
+    }
     .header {
         display: flex;
         gap: 15px;
         width: 100%;
+        height: 162px;
         padding: 16px 9px;
         background-color: rgba(255,255,255,0.1);
-        height: 166px;
+        border-radius: 5px;
     }
     .profile-image {
         width: 130px;
@@ -23,7 +31,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100%;
+        gap: 10px;
     }
     .name {
         display: flex;
@@ -90,4 +98,37 @@
         line-height: 15px;
         letter-spacing: 0.2px;
     }
+}
+
+@media screen and (max-width: 1200px) {
+    .talent-profile {
+        display: none;
+        position: absolute;
+        width: 100%;
+        .back-arrow {
+            display: block;
+        }
+        .name {
+            font-size: 16px;
+        }
+        .buttons {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .talent-profile {
+        .header {
+            height: auto;
+        }
+        .location-wrapper {
+            position: relative;
+            width: 100%;
+        }
+        .marked {
+            display: none;
+        }
+    }
+
 }

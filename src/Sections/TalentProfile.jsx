@@ -7,12 +7,20 @@ import ExperienceCard from './ExperienceCard'
 
 const TalentProfile = () => {
   const {currentTalent, setTalent} = useContext(TalentContext)
+  const {showProfile, setShowProfile} = useContext(TalentContext);
   const [select, setSelect] = useState(currentTalent.select)
+  
   const toggleSelect = () => {
       setSelect(!select);
   }
+
+  const closeProfile = () => {
+    setShowProfile(false);
+  }
+
   return (
-    <div className='talent-profile'>
+    <div className='talent-profile' style={{display: showProfile ? 'block': 'none'}}>
+      <p className='back-arrow' onClick={()=>closeProfile()}>➜</p>
       <div className="header">
         <img src={currentTalent.img} alt="" className="profile-image" />
         <div className="info-wrapper">

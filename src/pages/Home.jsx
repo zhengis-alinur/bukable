@@ -22,7 +22,7 @@ const Home = () => {
     {
       id:2,
       img: '/assets/Attila.png',
-      name: 'Andre Mark',
+      name: 'Attila A',
       location: 'Moscow, Russia',
       specialization: 'Front-End Developer',
       company: 'VTB',
@@ -33,7 +33,7 @@ const Home = () => {
     {
       id:3,
       img: '/assets/Nicholas.png',
-      name: 'Andre Mark',
+      name: 'Nicholas G',
       location: 'Moscow, Russia',
       specialization: 'Front-End Developer',
       company: 'VTB',
@@ -44,7 +44,7 @@ const Home = () => {
     {
       id:4,
       img: '/assets/Serena.png',
-      name: 'Andre Mark',
+      name: 'Serena M',
       location: 'Moscow, Russia',
       specialization: 'Front-End Developer',
       company: 'VTB',
@@ -93,15 +93,27 @@ const Home = () => {
       available: false
     }
   ]
-  let [currentTalent, setTalent] = useState(data[0]);
-  let [talents, setTalents] = useState(data);
+  const [currentTalent, setTalent] = useState(data[0]);
+  const [talents, setTalents] = useState(data);
+  const [showProfile, setShowProfile] = useState(window.innerWidth > 1200 ? true : false);
+
+  window.addEventListener('resize', ()=>{
+    if(window.innerWidth > 1200) {
+      setShowProfile(true);
+    } else {
+      setShowProfile(false);
+    }
+  });
+
   return (
     <div className='home page'>
         <SideBar/>
-        <TalentContext.Provider value={{currentTalent, setTalent}}>
-          <TalentsList talents={talents}/>
-          <TalentProfile currentTalent/>
-        </TalentContext.Provider>
+        <div className="content">
+          <TalentContext.Provider value={{currentTalent, setTalent, showProfile, setShowProfile}}>
+            <TalentsList talents={talents}/>
+            <TalentProfile currentTalent/>
+          </TalentContext.Provider>
+        </div>
     </div>
   )
 }

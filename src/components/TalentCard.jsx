@@ -6,12 +6,18 @@ import TalentContext from '../contexts/context';
 const TalentCard = (props) => {
 
     const {currentTalent, setTalent} = useContext(TalentContext)
+    const {showProfile, setShowProfile} = useContext(TalentContext)
+
     const [select, setSelect] = useState(props.select)
     const toggleSelect = () => {
         setSelect(!select);
     }
+    const toggleTalent = () => {
+        setTalent(props);
+        setShowProfile(true);
+    }
     return (
-        <div className='talent-card' onClick={() => {setTalent(props)}}>
+        <div className='talent-card' onClick={() => {toggleTalent()}}>
             <img src={props.img} alt="talent" className='talent-img'/>
             <div className="about">
                 <div className="name">

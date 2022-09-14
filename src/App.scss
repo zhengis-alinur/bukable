@@ -10,3 +10,9 @@
 .page {
     padding: 26px;
 }
+
+@media screen and (max-width: 800px) {
+    .page {
+        padding: 0;
+    }
+}
