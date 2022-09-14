@@ -97,14 +97,6 @@ const Home = () => {
   const [talents, setTalents] = useState(data);
   const [showProfile, setShowProfile] = useState(window.innerWidth > 1200 ? true : false);
 
-  window.addEventListener('resize', ()=>{
-    if(window.innerWidth > 1200) {
-      setShowProfile(true);
-    } else if(!showProfile){
-      setShowProfile(false);
-    }
-  });
-
   return (
     <div className='home page'>
         <SideBar/>

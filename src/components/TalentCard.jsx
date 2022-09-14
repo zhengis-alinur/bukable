@@ -12,13 +12,15 @@ const TalentCard = (props) => {
     const toggleSelect = () => {
         setSelect(!select);
     }
-    const toggleTalent = () => {
-        setTalent(props);
-        window.scrollTo(0,0);
-        setShowProfile(true);
+    const toggleTalent = (e) => {
+        if(e.target.tagName !== 'IMG') {
+            setTalent(props);
+            window.scrollTo(0,0);
+            setShowProfile(true);
+        }
     }
     return (
-        <div className='talent-card' onClick={() => {toggleTalent()}}>
+        <div className='talent-card' onClick={toggleTalent}>
             <img src={props.img} alt="talent" className='talent-img'/>
             <div className="about">
                 <div className="name">
