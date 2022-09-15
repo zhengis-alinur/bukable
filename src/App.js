@@ -5,7 +5,7 @@ import { SideBarContext } from './contexts/context';
 import { useState } from 'react';
 
 const App = () => {
-const [sideBar, setSideBar] = useState(true)
+const [sideBar, setSideBar] = useState(window.innerWidth > 600 ? true : false)
 
   return (
     <div className='app'>

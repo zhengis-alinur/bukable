@@ -13,7 +13,7 @@ const NavBar = () => {
     }
     return (
     <div className='nav-bar'>
-        <p className="burger-menu" onClick={() => {toggleSideBar()}}>☰</p>
+        <img className="burger-menu" src="/assets/burger-menu.png" alt=""  onClick={() => {toggleSideBar()}}/>
         <div className="logo">
             <Logo/>
         </div>
