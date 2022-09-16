@@ -38,10 +38,10 @@ const TalentProfile = () => {
             <img src="assets/map-pin.png" alt="" />
             <p className='location'>{currentTalent.location}</p>
             <p className='join-info'>Joined 5 month ago</p>
+            <div className="selected" onClick={()=>toggleSelect()}>
+              <img src={select ? '/assets/selected.png' : '/assets/select.png'} alt=""/>
+            </div>
           </div>
-        </div>
-        <div className="marked" onClick={()=>toggleSelect()}>
-          <img src={currentTalent.select ? '/assets/selected.png' : '/assets/select.png'} alt=""/>
         </div>
       </div>
       <div className="prof-info">

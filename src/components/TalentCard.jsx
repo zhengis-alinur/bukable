@@ -13,7 +13,7 @@ const TalentCard = (props) => {
         setSelect(!select);
     }
     const toggleTalent = (e) => {
-        if(e.target.id !== 'marked') {
+        if(e.target.id !== 'selected') {
             setTalent(props);
             window.scrollTo(0,0);
             setShowProfile(true);
@@ -43,8 +43,8 @@ const TalentCard = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="marked" onClick={()=>toggleSelect()}>
-                <img id="marked" src={select ? '/assets/selected.png' : '/assets/select.png'} alt=""/>
+            <div className="selected" onClick={()=>toggleSelect()}>
+                <img id="selected" src={select ? '/assets/selected.png' : '/assets/select.png'} alt=""/>
             </div>
         </div>
     )
