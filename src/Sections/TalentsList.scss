@@ -5,13 +5,15 @@
     width: 58%;
     border: #242526 solid 1px;
     border-radius: 8px;
+    max-height: 80vh;
+
     .cards {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 20px;
         padding: 10px 0;
-        max-height: 80vh;
+        max-height: 70vh;
         overflow-y: scroll;
         &::-webkit-scrollbar {
             display: none;

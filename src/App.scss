@@ -6,9 +6,18 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 25px;
+    overflow:hidden ;
 }
 .page {
     padding: 26px;
+}
+
+.cover {
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 90;
 }
 
 @media screen and (max-width: 800px) {

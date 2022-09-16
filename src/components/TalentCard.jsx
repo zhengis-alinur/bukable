@@ -43,8 +43,8 @@ const TalentCard = (props) => {
                     </div>
                 </div>
             </div>
-            <div id="marked" className="marked" onClick={()=>toggleSelect()}>
-                <img src={select ? '/assets/selected.png' : '/assets/select.png'} alt=""/>
+            <div className="marked" onClick={()=>toggleSelect()}>
+                <img id="marked" src={select ? '/assets/selected.png' : '/assets/select.png'} alt=""/>
             </div>
         </div>
     )
