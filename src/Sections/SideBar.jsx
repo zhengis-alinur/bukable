@@ -12,7 +12,7 @@ const SideBar = () => {
   })
 
   return (
-    <div className='side-bar' style={{left: sideBar ? '0' : '-165px'}}>
+    <div className='side-bar' style={{display: sideBar ? 'block' : 'none'}}>
       <Button class={'create-btn big secondary'} text={'Create'} icon={'/assets/create-icon.png'}/>
       <div className="items">
         <Button text={'Talents'} icon={'/assets/bulk.png'} class={'sidebar-btn active '}/>
