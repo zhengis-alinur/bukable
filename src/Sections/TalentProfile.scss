@@ -16,11 +16,14 @@
         right: 6px;
     }
     .back-arrow {
-        display: none;
+        position: absolute;
         text-align: right;
+        display: block;
         transform:rotateY(180deg); 
         margin: 10px;
         font-size: 20px;
+        right: 6px;
+        z-index: 110;
     }
     .header {position: relative;
         display: flex;
@@ -61,6 +64,9 @@
         .button {
             padding: 5px 10px;
             font-size: 10px;
+            &.secondary {
+                min-width: 100px;
+            }
         }
     }
     .location-wrapper {
@@ -141,10 +147,7 @@
     .talent-profile {
         width: 100%;
         .back-arrow {
-            position: absolute;
-            display: block;
-            right: 6px;
-            z-index: 110;
+
         }
         .name {
             font-size: 16px;

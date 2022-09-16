@@ -1,11 +1,13 @@
 .home {
     position: relative;
     display: flex;
-    justify-content: space-between;
     gap: 45px;
+    min-width: 100%;
     .content {
         position: relative;
         display: flex;
+        justify-content: flex-start;
+        width: 100%;
         gap: 20px;
     }
 }
