@@ -20,7 +20,7 @@ const TalentProfile = () => {
 
   return (
     <div className='talent-profile' style={{display: showProfile ? 'flex': 'none'}}>
-      <p className='back-arrow' onClick={()=>closeProfile()}>➜</p>
+      <p className='back-arrow' onClick={()=>closeProfile()}>⨯</p>
       <div className="header">
         <img src={currentTalent.img} alt="" className="profile-image" />
         <div className="info-wrapper">

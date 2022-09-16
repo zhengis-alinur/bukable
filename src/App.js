@@ -6,11 +6,10 @@ import { useState } from 'react';
 
 const App = () => {
 const [sideBar, setSideBar] = useState(window.innerWidth > 600 ? true : false)
-
   return (
     <div className='app'>
       <SideBarContext.Provider value={{sideBar, setSideBar}}>
-        <div className="cover" style={{display: sideBar ? 'block' : 'none'}} onClick={() => {setSideBar(false)}}></div>
+        <div className="cover" style={{display: (window.innerWidth > 600) ? 'none' : (sideBar ? "block" : "none")}} onClick={() => {setSideBar(false)}}></div>
         <NavBar/>
         <Home/>
       </SideBarContext.Provider>
