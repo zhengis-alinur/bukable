@@ -44,6 +44,12 @@
         gap: 5px;
     }
 
+    &.skill {
+        padding: 8px 16px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
     &.primary {
         background-color: $primary;
         &:hover {

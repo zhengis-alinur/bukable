@@ -10,6 +10,51 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 20px;
+        padding: 10px 0;
+        max-height: 80vh;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .search-bar {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+    .search-wrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+        min-width: 100px;
+        height: 30px;
+        .search-icon {
+            position: absolute;
+            top: 8px;
+            left: 15px;
+            width: 14px;
+        }
+        .search {
+            height: 30px;
+            border-radius: 5px;
+            width: 100%;
+            padding: 15px 23px 15px 39px;
+            outline: 0;
+            border: none;
+            font-size: 10px;
+        }
+    }
+    .select-wrapper {
+        position: relative;
+        display: flex;
+        .select {
+            height: 30px;
+            font-size: 10px;
+            padding: 10px 23px 10px 30px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
     }
 }
 

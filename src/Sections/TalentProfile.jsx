@@ -19,7 +19,7 @@ const TalentProfile = () => {
   }
 
   return (
-    <div className='talent-profile' style={{display: showProfile ? 'block': 'none'}}>
+    <div className='talent-profile' style={{display: showProfile ? 'flex': 'none'}}>
       <p className='back-arrow' onClick={()=>closeProfile()}>➜</p>
       <div className="header">
         <img src={currentTalent.img} alt="" className="profile-image" />
@@ -41,8 +41,8 @@ const TalentProfile = () => {
           </div>
         </div>
         <div className="marked" onClick={()=>toggleSelect()}>
-                <img src={currentTalent.select ? '/assets/selected.png' : '/assets/select.png'} alt=""/>
-            </div>
+          <img src={currentTalent.select ? '/assets/selected.png' : '/assets/select.png'} alt=""/>
+        </div>
       </div>
       <div className="prof-info">
         <div className="section about">
@@ -82,6 +82,49 @@ const TalentProfile = () => {
               </>
             }
             />
+          <hr />
+          <ExperienceCard 
+            img='assets/sberbank.png' 
+            speciality='Marketing Intern' 
+            company='Google • Los Angeles, USA (Remote)'
+            period='Sep 2021 - Present • 6 months'
+            child={
+              <>
+                <ul>
+                  <li>Increase user base on Instagram from 1500 followers to 2200 followers.</li>
+                  <li>Create Reels and TikToks to engage students in events that reached over 31,000 views</li>
+                  <li>Film and edit videos to enhance our social media presence and capture the student’s attention</li>
+                </ul>
+
+                <p>Skills : Adobe Premiere Pro, Final Cut pro, Canva, and Short form editing for TikTok</p>
+              </>
+            }
+            />
+        </div>
+        <hr />
+        <div className="section skills">
+          <h2 className='title'>Skills</h2>
+          <div className="skill-buttons">
+            <Button text='Social Ad Compaings' class='skill grey'/>
+            <Button text='Mobile Ad Compaings' class='skill grey'/>
+            <Button text='Short video ads' class='skill grey'/>
+            <Button text='Social Media' class='skill grey'/>
+            <Button text='After Effects' class='skill grey'/>
+            <Button text='Marketing' class='skill grey'/>
+          </div>
+        </div>
+        <hr />
+        <div className="section portfolio">
+          <h2 className='title'>Portfolio</h2>
+          <div className="slides">
+            <img className="slide" src="/assets/slide.png" alt="" />
+            <img className="slide" src="/assets/slide.png" alt="" />
+            <img className="slide" src="/assets/slide.png" alt="" />
+            <img className="slide" src="/assets/slide.png" alt="" />
+            <img className="slide" src="/assets/slide.png" alt="" />
+            <img className="slide" src="/assets/slide.png" alt="" />
+            <img className="slide" src="/assets/slide.png" alt="" />
+          </div>
         </div>
       </div>
     </div>

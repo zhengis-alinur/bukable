@@ -2,10 +2,11 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    gap: 5px;
+    gap: 45px;
     .content {
         position: relative;
         display: flex;
+        gap: 20px;
     }
 }
 

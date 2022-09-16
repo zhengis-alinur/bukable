@@ -6,13 +6,13 @@ import DocumentsHolder from '../components/DocumentsHolder';
 
 const SideBar = () => {
   const {sideBar, setSideBar} = useContext(SideBarContext)
-
+  
   window.addEventListener('resize', () => {
     setSideBar(window.innerWidth > 600 ? true : false)
   })
 
   return (
-    <div className='side-bar' style={{display: sideBar ? 'block' : 'none'}}>
+    <div className='side-bar' style={{left: sideBar ? '0' : '-160px'}}>
       <Button class={'create-btn big secondary'} text={'Create'} icon={'/assets/create-icon.png'}/>
       <div className="items">
         <Button text={'Talents'} icon={'/assets/bulk.png'} class={'sidebar-btn active '}/>
